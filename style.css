@@ -39,12 +39,61 @@
 .header__list li:nth-child(2) {
     display: none;
 }
-
+/* ---------------------toggle------------------ */
 .header__toggle {
     display: none;
     cursor: pointer;
 }
 
+.header__togglelist {
+	background-color: #fff;
+	height: 100%;
+	left: -250px;
+	overflow-y: scroll;
+	padding-top: 15px;
+	position: fixed;
+	top: 0;
+	transition: 0.5s;
+	width: 250px;
+	z-index: 200;
+}
+
+.toggle__logo {
+	display: block;
+	height: 36px;
+	width: 92px;
+	margin-left: 15px;
+}
+
+.toggle__logo img {
+    width: 100%;
+}
+
+.header__togglelist a {
+	display: flex;
+	align-items: center;
+	color: rgba(0,0,0,.54);
+	height: 48px;
+    text-decoration: none;
+}
+
+.toggle__img {
+    width: 56px;
+    height: 30px;	
+    padding: 0 15px;
+	margin-top: 3px;
+}
+
+.toggle__img img {
+	width: 100%;
+}
+
+.toggle__line {
+	background: #e1e1e1;
+	height: 1px;
+	margin: 5px 0;
+}
+/* --------------------dropdown--------------------- */
 .header__app {
     display: inline-block;
     height: 30px;
@@ -308,72 +357,6 @@ li>.header__enter:hover {
 	vertical-align: top;
 }
 
-
-
-
-
-
-
-.header__togglelist {
-	background-color: #fff;
-	height: 100%;
-	left: -250px;
-	overflow-y: scroll;
-	padding-top: 15px;
-	position: fixed;
-	top: 0;
-	transition: 0.5s;
-	width: 250px;
-	z-index: 200;
-}
-
-.toggle__logo {
-	display: block;
-	height: 36px;
-	width: 92px;
-	margin-left: 15px;
-}
-
-.toggle__logo img {
-    width: 100%;
-}
-
-.header__togglelist a {
-	display: flex;
-	align-items: center;
-	color: rgba(0,0,0,.54);
-	height: 48px;
-    text-decoration: none;
-}
-
-.toggle__img {
-    width: 56px;
-    height: 30px;	
-    padding: 0 15px;
-	margin-top: 3px;
-}
-
-.toggle__img img {
-	width: 100%;
-}
-
-.toggle__line {
-	background: #e1e1e1;
-	height: 1px;
-	margin: 5px 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 940px) {
 
     .footer__wrap {
@@ -516,6 +499,15 @@ li>.header__enter:hover {
 
     .footer__wrap li a {
         font-size: 13px;
+    }
+
+}
+
+@media screen and (max-height: 565px) {
+
+    .footer {
+        position: relative;
+        margin-top: 20px;
     }
 
 }
