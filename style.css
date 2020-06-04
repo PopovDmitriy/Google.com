@@ -381,7 +381,7 @@ li>.header__enter:hover {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 
     .header__list {
         padding-top: 10px;
@@ -503,11 +503,11 @@ li>.header__enter:hover {
 
 }
 
-@media screen and (max-height: 565px) {
+@media screen and (max-height: 500px) {
 
     .footer {
         position: relative;
-        margin-top: 20px;
+        margin-top: 150px;
     }
 
 }
