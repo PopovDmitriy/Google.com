@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+    const html = document.documentElement;
     const header = document.querySelector('.js-header');
     const main = document.querySelector('.js-main');
     const dropList = header.querySelector('[data-droplist]');
@@ -21,9 +22,14 @@ document.addEventListener('DOMContentLoaded', function() {
             dropLayout.classList.remove("main__layout");
         }
 
+        function noScroll() {
+            html.style.overflowY = "hidden";
+        }
+
         toggler.addEventListener('click', function() {
             toggleMenu();
             defaultDropDown();
+            noScroll();
         });
 
         toggleLayout.addEventListener('click', function() {

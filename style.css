@@ -503,11 +503,11 @@ li>.header__enter:hover {
 
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 490px) {
 
     .footer {
         position: relative;
-        margin-top: 150px;
+        margin-top: 130px;
     }
 
 }
