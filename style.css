@@ -247,13 +247,13 @@ li>.header__enter:hover {
     display: flex;
     margin: 0 10px;
     border-bottom: 2px solid #e5e5e5;
+    height: 45px;
 }
 
 .search__area input {
-    width: 70%;
+    width: 90%;
     border: none;
     padding-left: 15px;
-    height: 45px;
     font-size: 18px;
 }
 
