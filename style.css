@@ -6,6 +6,10 @@
     font-family: arial,sans-serif;
 }
 
+input:focus {
+    outline: none;
+}
+
 .header__list {
     min-width: 230px;
     padding-top: 20px;
