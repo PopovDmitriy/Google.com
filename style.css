@@ -200,10 +200,7 @@ li>.header__enter:hover {
 	height: 64px;
 	vertical-align: top;
 }
-
-
 /* -------------------------------------------------- */
-
 .main {
     display: flex;
     flex-direction: column;
@@ -264,6 +261,10 @@ li>.header__enter:hover {
     line-height: 40px;
     border: none;
     font-size: 16px;
+}
+
+.main__search input:focus {
+    border: none;
 }
 
 .keyboard-icon {
@@ -404,7 +405,6 @@ li>.header__enter:hover {
 }
 
 @media screen and (max-width: 940px) {
-
     .footer__lists {
         flex-wrap: wrap;
         flex-direction: column-reverse;
@@ -424,11 +424,9 @@ li>.header__enter:hover {
     .footer__paramlist li:last-child {
         padding-right: 0;
     }
-
 }
 
 @media screen and (max-width: 900px) {
-    
     .header__toggle {
         position: absolute;
             top: 12px;
@@ -544,14 +542,11 @@ li>.header__enter:hover {
     .footer__lists li a {
         font-size: 13px;
     }
-
 }
 
 @media screen and (max-height: 490px) {
-
     .footer {
         position: relative;
         margin-top: 80px;
     }
-
 }
