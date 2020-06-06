@@ -259,8 +259,9 @@ li>.header__enter:hover {
 
 .search__back, .search__icon--mb  {
     width: 25px;
-    display: flex;
+    padding-top: 11px;
     cursor: pointer;
+    background: #000;
 }
 
 .main__search {
