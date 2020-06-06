@@ -57,4 +57,26 @@ document.addEventListener('DOMContentLoaded', function() {
         })
     }
     dropDownApp();
+
+    function mobileSearch() {
+        const input = main.querySelector('[data-input]');
+        const mob_inputArea = main.querySelector('[data-mobinputarea]');
+        const arrow = main.querySelector('[data-arrow]');
+        const inputMb = mob_inputArea.querySelector('[data-mbinput]');
+
+        function checkWidth() {
+            const clientWidth = screen.width;
+
+            (clientWidth <= 940) ? mob_inputArea.classList.add('open') + inputMb.focus(): null
+        }
+
+        function backArrow() {
+            mob_inputArea.classList.remove('open');
+            inputMb.value = "";
+        }
+
+        arrow.addEventListener('click', () => {backArrow()});
+        input.addEventListener('focus', checkWidth.bind(this));
+    }
+    mobileSearch();
 })
