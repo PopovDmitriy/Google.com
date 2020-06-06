@@ -12,10 +12,10 @@
 <body>
     <header class="header js-header">
         <nav class="header__nav">
-            <div data-navlayout></div>
+            <div data-togglelayout></div>
             <div class="header__toggle" data-toggler>
                 <svg style="fill:#757575;width:24px;height:24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
-                <ul class="header__togglelist close" style="transform: translateX(250px);"  data-navlist>
+                <ul class="toggle__list close" style="transform: translateX(250px);"  data-togglelist>
                     <li>
                         <a class="toggle__logo" href="#">
                             <img src="https://askerweb.by/wp-content/uploads/2017/11/google-logo.png" alt="Google-Logo">
@@ -30,7 +30,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="rYDfvb" href="https://myactivity.google.com/product/search?utm_source=google&amp;hl=ru-BY&amp;sa=X&amp;ved=0ahUKEwjN-ZPY0uPpAhW7AhAIHWaVBrsQsLsECAg">
+                        <a href="https://myactivity.google.com/product/search?utm_source=google&amp;hl=ru-BY&amp;sa=X&amp;ved=0ahUKEwjN-ZPY0uPpAhW7AhAIHWaVBrsQsLsECAg">
                             <div class="toggle__img">
                                 <img src="https://www.gstatic.com/navigationdrawer/search_activity_icon.svg" alt="Действия в Поиске">
                             </div>    
@@ -51,7 +51,7 @@
                     <li>
                         <a href="https://www.google.com/preferences?hl=ru-BY&sa=X&ved=0ahUKEwiv5cKDxeXpAhXbBhAIHcP-B8gQn5cCCAo">
                             <div class="toggle__img">
-                                <img class="EuAkLc" src="https://www.gstatic.com/navigationdrawer/settings_icon.svg" alt="">
+                                <img src="https://www.gstatic.com/navigationdrawer/settings_icon.svg" alt="">
                             </div>
                             <p>Настройки</p>  
                         </a>
@@ -59,7 +59,7 @@
                     <li>
                         <a href="https://www.google.com/history/privacyadvisor/search/unauth?utm_source=googlemenu&sa=X&ved=0ahUKEwiv5cKDxeXpAhXbBhAIHcP-B8gQp9gDCAs">
                             <div class="toggle__img">
-                                <img class="EuAkLc" src="https://www.gstatic.com/navigationdrawer/privacy_advisor_icon.svg" alt="Данные в Поиске">
+                                <img src="https://www.gstatic.com/navigationdrawer/privacy_advisor_icon.svg" alt="Данные в Поиске">
                             </div>
                             <p>Ваши данные в Поиске</p>
                         </a>
@@ -67,7 +67,7 @@
                     <li>
                         <a href="//google.com/search/howsearchworks/">
                             <div class="toggle__img">
-                                <img class="EuAkLc" src="https://www.gstatic.com/navigationdrawer/how_search_works_icon.svg" alt="Google Поиск">
+                                <img src="https://www.gstatic.com/navigationdrawer/how_search_works_icon.svg" alt="Google Поиск">
                             </div>
                             <p>Как работает Google Поиск</p>
                         </a>
@@ -75,7 +75,7 @@
                     <li>
                         <a href="https://support.google.com/websearch/?p=ws_results_help&amp;hl=ru-BY">
                             <div class="toggle__img">
-                                <img class="EuAkLc" src="https://www.gstatic.com/navigationdrawer/help_icon.svg" alt="Справка">
+                                <img src="https://www.gstatic.com/navigationdrawer/help_icon.svg" alt="Справка">
                             </div>
                             <p>Справка</p>
                         </a>
@@ -91,119 +91,121 @@
                 </ul>
             </div>
             <ul class="header__list">
-                <li><a href="https://mail.google.com/mail/?tab=wm&ogbl">Почта</a></li>
-                <li class="focus-link"><a href="#">Все</a></li>
-                <li><a href="https://www.google.by/imghp?hl=ru&tab=wi&ogbl">Картинки</a></li>
-                <li><a href="#" class="header__app " data-dropbtn title="Приложения Google"></a>
-                    <ul class="header__applist close" data-droplist>
-                        <li class="header-applist__item">
+                <div class="header__listwrap">
+                    <li><a href="https://mail.google.com/mail/?tab=wm&ogbl">Почта</a></li>
+                    <li class="header__link--focus"><a href="#">Все</a></li>
+                    <li><a href="https://www.google.by/imghp?hl=ru&tab=wi&ogbl">Картинки</a></li>
+                </div>
+                <li><a href="#" class="header__dropdown " data-dropbtn title="Приложения Google"></a>
+                    <ul class="dropdown__list close" data-droplist>
+                        <li class="dropdown__item">
                             <a href="https://myaccount.google.com/?utm_source=OGB&amp;tab=wk&amp;utm_medium=app">
-                                <div class="header-applist__wrap">
-                                    <div class="header-applist__icon" style="background-position: 0 -1449px;"></div>
+                                <div class="dropdown__wrap">
+                                    <div class="dropdown__icon" style="background-position: 0 -1449px;"></div>
                                 </div>
                                 <p>Аккаунт</p>
                             </a>
                         </li>
-                        <li class="header-applist__item">
+                        <li class="dropdown__item">
                             <a href="https://www.google.by/webhp?tab=ww">
-                                <div class="header-applist__wrap">
-                                    <div class="header-applist__icon" style="background-position: 0 -138px;"></div>
+                                <div class="dropdown__wrap">
+                                    <div class="dropdown__icon" style="background-position: 0 -138px;"></div>
                                 </div>
                                 <p>Поиск</p>
                             </a>
                         </li>
-                        <li class="header-applist__item">
+                        <li class="dropdown__item">
                             <a href="https://maps.google.by/maps?hl=ru&amp;tab=wl">
-                                <div class="header-applist__wrap">
-                                    <div class="header-applist__icon" style="background-position: 0 -828px;"></div>
+                                <div class="dropdown__wrap">
+                                    <div class="dropdown__icon" style="background-position: 0 -828px;"></div>
                                 </div>
                                 <p>Карты</p>
                             </a>
                         </li>
-                        <li class="header-applist__item">
+                        <li class="dropdown__item">
                             <a href="https://www.youtube.com/?gl=BY&amp;tab=w1">
-                                <div class="header-applist__wrap">
-                                    <div class="header-applist__icon" style="background-position: 0 -1311px;"></div>
+                                <div class="dropdown__wrap">
+                                    <div class="dropdown__icon" style="background-position: 0 -1311px;"></div>
                                 </div>
                                 <p>YouTube</p>
                             </a>
                         </li>
-                        <li class="header-applist__item">
+                        <li class="dropdown__item">
                             <a href="https://play.google.com/?hl=ru&amp;tab=w8">
-                                <div class="header-applist__wrap">
-                                    <div class="header-applist__icon" style="background-position: 0 -207px;"></div>
+                                <div class="dropdown__wrap">
+                                    <div class="dropdown__icon" style="background-position: 0 -207px;"></div>
                                 </div>
                                 <p>Play</p>
                             </a>
                         </li>
-                        <li class="header-applist__item">
+                        <li class="dropdown__item">
                             <a href="https://mail.google.com/mail/?tab=wm">
-                                <div class="CgwTDb">
-                                    <div class="header-applist__icon" style="background-position: 0 -483px;"></div>
+                                <div class="dropdown__wrap">
+                                    <div class="dropdown__icon" style="background-position: 0 -483px;"></div>
                                 </div>
                                 <p>Почта</p>
                             </a>
                         </li>
-                        <li class="header-applist__item">
+                        <li class="dropdown__item">
                             <a href="https://meet.google.com?hs=197">
-                                <div class="header-applist__wrap">
-                                    <div class="header-applist__icon" style="background-position: 0 -2622px;"></div>
+                                <div class="dropdown__wrap">
+                                    <div class="dropdown__icon" style="background-position: 0 -2622px;"></div>
                                 </div>
                                 <p>Meet</p>
                             </a>
                         </li>
-                        <li class="header-applist__item">
+                        <li class="dropdown__item">
                             <a href="https://contacts.google.com/?hl=ru&amp;tab=wC">
-                                <div class="header-applist__wrap">
-                                    <div class="header-applist__icon" style="background-position: 0 -1863px;"></div>
+                                <div class="dropdown__wrap">
+                                    <div class="dropdown__icon" style="background-position: 0 -1863px;"></div>
                                 </div>
                                 <p>Контакты</p>
                             </a>
                         </li>
-                        <li class="header-applist__item">
+                        <li class="dropdown__item">
                             <a href="https://drive.google.com/?tab=wo">
-                                <div class="header-applist__wrap">
-                                    <div class="header-applist__icon" style="background-position: 0 -2277px;"></div>
+                                <div class="dropdown__wrap">
+                                    <div class="dropdown__icon" style="background-position: 0 -2277px;"></div>
                                 </div>
                                 <p>Диск</p>
                             </a>
                         </li>
-                        <li class="header-applist__item">
+                        <li class="dropdown__item">
                             <a href="https://www.google.com/calendar?tab=wc">
-                                <div class="header-applist__wrap">
-                                    <div class="header-applist__icon" style="background-position: 0 -2553px;"></div>
+                                <div class="dropdown__wrap">
+                                    <div class="dropdown__icon" style="background-position: 0 -2553px;"></div>
                                 </div>
                                 <p>Календарь</p>
                             </a>
                         </li>
-                        <li class="header-applist__item">
+                        <li class="dropdown__item">
                             <a href="https://translate.google.by/?hl=ru&amp;tab=wT">
-                                <div class="header-applist__wrap">
-                                    <div class="header-applist__icon" style="background-position: 0 -1242px;"></div>
+                                <div class="dropdown__wrap">
+                                    <div class="dropdown__icon" style="background-position: 0 -1242px;"></div>
                                 </div>
                                 <p>Переводчик</p>
                             </a>
                         </li>
-                        <li class="header-applist__item">
+                        <li class="dropdown__item">
                             <a href="https://photos.google.com/?tab=wq&amp;pageId=none">
-                                <div class="header-applist__wrap">
-                                    <div class="header-applist__icon" style="background-position: 0 -621px;"></div>
+                                <div class="dropdown__wrap">
+                                    <div class="dropdown__icon" style="background-position: 0 -621px;"></div>
                                 </div>
                                 <p>Фото</p>
                             </a>
                         </li>
-                        <li class="header-applist__item">
+                        <li class="dropdown__item">
                             <a href="https://duo.google.com/?usp=duo_ald">
-                                <div class="header-applist__wrap">
-                                    <div class="header-applist__icon" style="background-position: 0 -897px;"></div>
+                                <div class="dropdown__wrap">
+                                    <div class="dropdown__icon" style="background-position: 0 -897px;"></div>
                                 </div>
                                 <p>Duo</p>
                             </a>
                         </li>
-                        <li class="header-applist__item">
+                        <li class="dropdown__item">
                             <a href="https://www.google.com/chrome/?brand=CHZO&amp;utm_source=google.com&amp;utm_medium=desktop-app-launcher&amp;utm_campaign=desktop-app-launcher&amp;utm_content=chrome-logo&amp;utm_keyword=CHZO">
-                                <div class="header-applist__wrap">
-                                    <div class="header-applist__icon" style="background-position: 0 -2070px;"></div>
+                                <div class="dropdown__wrap">
+                                    <div class="dropdown__icon" style="background-position: 0 -2070px;"></div>
                                 </div>
                                 <p>Chrome</p>
                             </a>
@@ -225,15 +227,27 @@
             <span class="voice-icon" title="Голосовой поиск"><svg focusable="false" viewBox="0 0 24 24"><path d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z" fill="#4285f4"></path><path d="m11 18.08h2v3.92h-2z" fill="#34a853"></path><path d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z" fill="#f4b400"></path><path d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z" fill="#ea4335"></path></svg></span>
         </div>
         <div class="main__btn">
-            <button class="search-btn">Поиск в Google</button>
-            <button class="doodle-btn">Мне повезёт!</button>
+            <button class="main__searchbtn">Поиск в Google</button>
+            <button class="main__doodlebtn">Мне повезёт!</button>
+        </div>
+        <div class="main__lang">
+            <p>Сервисы Google доступны на разных языках:
+                <span><a href="#">Белорусский</a></span>
+            </p>
         </div>
     </main>
     <footer class="footer">
         <div class="footer__country">
             <p>Беларусь</p>
         </div>
-        <div class="footer__wrap">
+        <div class="footer__location">
+            <p>
+                <span class="footer__circle"></span>
+                <span class="footer__locname">Неизвестно</span>
+                -Учитывать мое местоположение
+            </p>
+        </div>
+        <div class="footer__lists">
             <ul class="footer__infolist">
                 <li><a href="https://www.google.com/intl/ru_by/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Реклама</a></li>
                 <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Для бизнеса</a></li>

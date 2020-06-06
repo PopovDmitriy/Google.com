@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function headerToggler() {
         const toggler = header.querySelector('[data-toggler]');
-        const toggleList = header.querySelector('[data-navlist]')
-        const toggleLayout = header.querySelector('[data-navlayout]');
+        const toggleList = header.querySelector('[data-togglelist]')
+        const toggleLayout = header.querySelector('[data-togglelayout]');
 
         function toggleMenu() {
             toggleList.classList.toggle("close");
