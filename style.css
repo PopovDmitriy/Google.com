@@ -543,7 +543,7 @@ li>.header__enter:hover {
 
     .main__searchinput {
         width: 88%;
-        padding-left: 20px;
+        margin-left: 20px;
     }
 
     .keyboard-icon,
